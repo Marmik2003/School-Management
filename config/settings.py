@@ -304,10 +304,6 @@ if not DISALLOW_PAYMENT:
         BRAINTREE_PUBLIC_KEY = env('BRAINTREE_PUBLIC_KEY')
         BRAINTREE_PRIVATE_KEY = env('BRAINTREE_PRIVATE_KEY')
 
-        # SSLCommerz (only for Bangladesh)
-        STORE_ID = env('STORE_ID')
-        STORE_PASS = env('STORE_PASS')
-        SSL_ISSANDBOX = env('SSL_ISSANDBOX')
     except ImproperlyConfigured:
         raise ImproperlyConfigured(
             "Please enter you Braintree sandbox credentials in settings.py or config/.env file."
