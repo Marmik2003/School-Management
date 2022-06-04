@@ -8,9 +8,9 @@ from payments.models import SSLPayment
 # Check if settings.DISALLOW_PAYMENT is False.
 # otherwise, these variables can't be imported and will raise exception.
 ssl_settings = {
-    'store_id': settings.STORE_ID,
-    'store_pass': settings.STORE_PASS,
-    'issandbox': settings.SSL_ISSANDBOX
+    'store_id': '',
+    'store_pass': '',
+    'issandbox': ''
 }
 
 
