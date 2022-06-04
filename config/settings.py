@@ -304,9 +304,9 @@ if not DISALLOW_PAYMENT:
         BRAINTREE_PUBLIC_KEY = env('BRAINTREE_PUBLIC_KEY')
         BRAINTREE_PRIVATE_KEY = env('BRAINTREE_PRIVATE_KEY')
 
-        STORE_ID = env('STORE_ID', '')
-        STORE_PASS = env('STORE_PASS', '')
-        SSL_ISSANDBOX = env('SSL_ISSANDBOX', '')
+        STORE_ID = env('STORE_ID', '001')
+        STORE_PASS = env('STORE_PASS', '1992288')
+        SSL_ISSANDBOX = env('SSL_ISSANDBOX', '28727727')
 
     except ImproperlyConfigured:
         raise ImproperlyConfigured(
